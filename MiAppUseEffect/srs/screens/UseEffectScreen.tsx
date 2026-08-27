@@ -21,6 +21,21 @@ const UseEffectScreen = () => {
         console.log("El componente se renderizó");
     });
 
+    /*
+        *useEffect con arreglo de dependencias
+        *
+        * Este se ejecuta cuando cambia el valor de contador
+        * porque contador esta dentro del arreglo de dependecias
+        * 
+        * Se recomienda utilizar cuando queremos ejecutar una accion
+        * solamente al cambiar una variable especifica
+    */
+
+     useEffect (() =>{
+        console.log("El contador cambio a:", contador);
+    },[contador]);
+    
+
     return(
         <View>
             <Text>Práctica UseEffect</Text>
