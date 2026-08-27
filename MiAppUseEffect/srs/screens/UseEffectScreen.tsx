@@ -9,7 +9,7 @@ const UseEffectScreen = () => {
     /*
         *useEffect sin arreglo de dependencias
         *
-        * Este useEffect se ejecuta despues de cada renderizado del componente
+        * Este useEffect se ejecuta después de cada renderizado del componente
         * porque no tiene un arreglo de dependencias
         * 
         * Se puede utilizar cuando necesitamos ejecutar una acción cada vez
@@ -25,10 +25,10 @@ const UseEffectScreen = () => {
         *useEffect con arreglo de dependencias
         *
         * Este useEffect se ejecuta cuando cambia el valor de contador
-        * porque contador esta dentro del arreglo de dependencias
+        * porque contador está dentro del arreglo de dependencias
         * 
-        * Se recomienda utilizar cuando queremos ejecutar una accion
-        * solamente al cambiar una variable especifica
+        * Se recomienda utilizar cuando queremos ejecutar una acción
+        * solamente al cambiar una variable específica
     */
 
      useEffect (() =>{
