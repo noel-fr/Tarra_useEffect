@@ -40,7 +40,7 @@ const UseEffectScreen = () => {
 
     return(
         <View style={styles.container}>
-            <Text>Práctica UseEffect</Text>
+            <Text style={styles.title}>Práctica UseEffect</Text>
             <Text>Contador: {contador}</Text>
             <TouchableOpacity onPress={() => setContador(contador + 1)}>
                 <Text>Aumentar</Text>
@@ -60,8 +60,9 @@ const styles = StyleSheet.create({
     },
 
     title:{
-
-    }
+        fontSize: 22,
+        marginBottom: 10,
+    },
 });
 
 
