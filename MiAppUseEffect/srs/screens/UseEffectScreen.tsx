@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const UseEffectScreen = () => {
     const [contador, setContador] = useState(0);
+    const [mensaje, setMensaje] = useState("El contador todabia no ha cambiado");
 
     /*
         *useEffect sin arreglo de dependencias
@@ -32,9 +33,10 @@ const UseEffectScreen = () => {
     */
 
      useEffect (() =>{
-        console.log("El contador cambio a:", contador);
+        console.log("El contador cambió a:", contador);
+        setMensaje(`El contador cambio a: ${contador}`);
     },[contador]);
-    
+
 
     return(
         <View>
@@ -43,6 +45,7 @@ const UseEffectScreen = () => {
             <TouchableOpacity onPress={() => setContador(contador + 1)}>
                 <Text>Aumentar</Text>
             </TouchableOpacity>
+            <Text>{mensaje}</Text>
             
         </View>
     );
